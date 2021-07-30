@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentTableViewCell" rowHeight="82" id="KGk-i7-Jjw" customClass="ContentTableViewCell" customModule="ArticlePostBrowser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="L3f-XI-a1a">
+                        <rect key="frame" x="16" y="16" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="LMW-b2-9EY"/>
+                            <constraint firstAttribute="width" constant="50" id="OvG-N2-lkc"/>
+                            <constraint firstAttribute="width" secondItem="L3f-XI-a1a" secondAttribute="height" multiplier="1:1" id="qXZ-ta-ZvM"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bKs-Hu-ztQ">
+                        <rect key="frame" x="82" y="16" width="222" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-dr-Rff">
+                                <rect key="frame" x="0.0" y="0.0" width="222" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRK-hD-445">
+                                <rect key="frame" x="0.0" y="32" width="222" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bKs-Hu-ztQ" firstAttribute="leading" secondItem="L3f-XI-a1a" secondAttribute="trailing" constant="16" id="5fe-f5-mIQ"/>
+                    <constraint firstAttribute="bottom" secondItem="bKs-Hu-ztQ" secondAttribute="bottom" constant="16.5" id="Jec-KL-kAa"/>
+                    <constraint firstItem="bKs-Hu-ztQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Rj0-Ln-jKW"/>
+                    <constraint firstItem="L3f-XI-a1a" firstAttribute="centerY" secondItem="bKs-Hu-ztQ" secondAttribute="centerY" id="a1g-Y0-LHs"/>
+                    <constraint firstAttribute="trailing" secondItem="bKs-Hu-ztQ" secondAttribute="trailing" constant="16" id="rRa-x6-PIU"/>
+                    <constraint firstItem="L3f-XI-a1a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wbU-cQ-8pR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgvPost" destination="L3f-XI-a1a" id="f4h-hw-M6S"/>
+                <outlet property="lblPostDescription" destination="nRK-hD-445" id="FGu-ny-9dh"/>
+                <outlet property="lblPostTitle" destination="q0F-dr-Rff" id="S7E-5t-m8K"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="92"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder_image" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PeopleCollectionViewCell" id="gTV-IL-0wX" customClass="PeopleCollectionViewCell" customModule="ArticlePostBrowser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Ph-0bl">
+                        <rect key="frame" x="8" y="8" width="154" height="154"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="2sb-pv-HDN">
+                        <rect key="frame" x="45" y="20" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="UoC-BL-EHB"/>
+                            <constraint firstAttribute="width" constant="80" id="r0l-Kz-szt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ne2-zA-enX">
+                        <rect key="frame" x="66.5" y="116" width="37" height="17.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hB-Wi-gEF">
+                        <rect key="frame" x="68" y="137.5" width="34.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0hB-Wi-gEF" firstAttribute="top" secondItem="ne2-zA-enX" secondAttribute="bottom" constant="4" id="2Lj-eY-ln0"/>
+                <constraint firstItem="2sb-pv-HDN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="56T-8S-bis"/>
+                <constraint firstAttribute="bottom" secondItem="nbR-Ph-0bl" secondAttribute="bottom" constant="8" id="9aI-7l-93l"/>
+                <constraint firstItem="ne2-zA-enX" firstAttribute="centerX" secondItem="2sb-pv-HDN" secondAttribute="centerX" id="DEs-7Q-IE2"/>
+                <constraint firstItem="0hB-Wi-gEF" firstAttribute="centerX" secondItem="ne2-zA-enX" secondAttribute="centerX" id="H98-by-TSA"/>
+                <constraint firstItem="2sb-pv-HDN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Mg5-BY-OST"/>
+                <constraint firstItem="nbR-Ph-0bl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="SJn-Bs-f4v"/>
+                <constraint firstItem="nbR-Ph-0bl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="VmG-Rp-bc9"/>
+                <constraint firstItem="ne2-zA-enX" firstAttribute="top" secondItem="2sb-pv-HDN" secondAttribute="bottom" constant="16" id="gbN-Ga-uGb"/>
+                <constraint firstAttribute="trailing" secondItem="nbR-Ph-0bl" secondAttribute="trailing" constant="8" id="s3X-dJ-R2a"/>
+            </constraints>
+            <size key="customSize" width="99" height="142"/>
+            <connections>
+                <outlet property="imgvUser" destination="2sb-pv-HDN" id="VD8-Cg-slt"/>
+                <outlet property="lblDetail" destination="0hB-Wi-gEF" id="Zo9-2l-Spz"/>
+                <outlet property="lblTitle" destination="ne2-zA-enX" id="eT2-Tu-2PC"/>
+                <outlet property="viewBackground" destination="nbR-Ph-0bl" id="038-GZ-wsa"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="119.19642857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder_image" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

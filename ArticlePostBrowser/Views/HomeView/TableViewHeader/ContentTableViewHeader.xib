@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CBc-g9-urD" customClass="ContentTableViewHeader" customModule="ArticlePostBrowser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-zn-q8a">
+                    <rect key="frame" x="16" y="12" width="44.5" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGA-vx-QWx">
+                    <rect key="frame" x="351" y="7" width="47" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="See All"/>
+                    <connections>
+                        <action selector="didTapOnSeeAllButton:" destination="-2" eventType="touchUpInside" id="Nqu-p3-cNk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hi9-Uz-SeA"/>
+            <constraints>
+                <constraint firstItem="KGz-zn-q8a" firstAttribute="centerY" secondItem="CBc-g9-urD" secondAttribute="centerY" id="A9f-ry-Mca"/>
+                <constraint firstItem="hi9-Uz-SeA" firstAttribute="trailing" secondItem="jGA-vx-QWx" secondAttribute="trailing" constant="16" id="EBE-D8-bwI"/>
+                <constraint firstItem="KGz-zn-q8a" firstAttribute="leading" secondItem="CBc-g9-urD" secondAttribute="leading" constant="16" id="MGR-Qf-jU2"/>
+                <constraint firstItem="jGA-vx-QWx" firstAttribute="centerY" secondItem="CBc-g9-urD" secondAttribute="centerY" id="r6Z-rw-ZzL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSeeAll" destination="jGA-vx-QWx" id="BNN-by-Ehg"/>
+                <outlet property="lblTitle" destination="KGz-zn-q8a" id="aXg-nB-zuu"/>
+            </connections>
+            <point key="canvasLocation" x="-291.304347826087" y="-50.558035714285715"/>
+        </view>
+    </objects>
+</document>
